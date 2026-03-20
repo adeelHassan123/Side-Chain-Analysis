@@ -1,0 +1,55 @@
+# Python virtual environments
+.env/
+venv/
+env/
+rainbow/rainbow
+rainbow_env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code settings (optional)
+.vscode/
+
+# OS junk
+.DS_Store
+
+# PyCharm and VSCode
+.idea/
+.vscode/
+
+# Byte-compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*~
+
+# MacOS and Linux temp files
+.DS_Store
+*.swp
+*~
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# build outputs
+build/
+dist/
+*.egg-info/
+
+# HDF5 / large generated artifacts
+*.h5
+
+# ARM output artifacts
+*.elf
+*.bin
+*.o
+*.map
+
+# Logs
+*.log
+
+# Avoid tracking workspace internal caches
+.workspaces
