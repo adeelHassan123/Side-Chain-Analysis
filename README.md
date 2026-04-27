@@ -1,8 +1,8 @@
-# Side-Chain-Analysis Lab Guide
+# Side-Chain-Analysis Operations Guide
 
-This repository contains course labs for CS-360 Cyber Security:
-- Lab 07: Side-Channel Emulator (Rainbow)
-- Lab 08: End-to-End Side-Channel Attack (Rainbow + Deep Learning)
+This repository contains two operational modules for an intelligent side-channel attack system:
+- `attack-emulation-core`: low-level side-channel emulation and target binary setup
+- `intelligent-attack-pipeline`: dataset generation, deep learning attack training, and evaluation
 
 ## Getting started
 
@@ -49,11 +49,11 @@ python3 -c "import lascar; print('Lascar OK')"
 
 ---
 
-## Lab 07: Side-Channel Emulator - Rainbow
+## Module 1: Attack Emulation Core (Rainbow)
 
-### Create working directory
+### Create module working directory
 ```bash
-mkdir -p ~/lab07 && cd ~/lab07
+mkdir -p ~/attack-emulation-core && cd ~/attack-emulation-core
 ```
 
 ### 1) C implementation (`simple_xor.c`)
@@ -109,15 +109,15 @@ Expect printed key matching and saved CPA trace plots.
 
 ---
 
-## Lab 08: End-to-End Side-Channel Analysis
+## Module 2: Intelligent Attack Pipeline
 
 ### 1) Generate dataset (fixed-key / variable-key)
-Use `lab08/generate_dataset.py` or equivalent script from repository.
+Use `intelligent-attack-pipeline/generate_dataset.py` from this repository.
 
 ### 2) Train deep learning model
-Use `Lab08/attack.py` / `comparative_analysis.py` scripts with HDF5 datasets:
-- `Lab08/datasets/fixed_key_dataset.h5`
-- `Lab08/datasets/variable_key_dataset.h5`
+Use `intelligent-attack-pipeline/attack.py` or `intelligent-attack-pipeline/comparative_analysis.py` with HDF5 datasets:
+- `intelligent-attack-pipeline/datasets/fixed_key_dataset.h5`
+- `intelligent-attack-pipeline/datasets/variable_key_dataset.h5`
 
 ### 3) Verify key recovery
 Run from command line and confirm report for accuracy on profiling and attack sets.
