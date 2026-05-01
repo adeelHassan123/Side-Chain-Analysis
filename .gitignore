@@ -53,3 +53,4 @@ dist/
 
 # Avoid tracking workspace internal caches
 .workspaces
+Side-Chain-Analysis/rainbow/*
